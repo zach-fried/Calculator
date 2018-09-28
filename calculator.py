@@ -1,10 +1,10 @@
 import math
 
-import os
+#import os
 
-os.chdir("/Users/Zach/Desktop/Calculator")
+#os.chdir("/Users/Zach/Desktop/Calculator")
 
-import exponent
+#import exponent
 
 num1 =float(input("Enter a number:"))
 operation = input("Enter the operation you would like to perform (+, -, /, *, abs, sqrt, power):")
@@ -28,7 +28,8 @@ elif operation == "sqrt":
     result = math.sqrt(num1)
 elif operation == "power":
     num2 = float(input("Enter the exponent: "))
-    result = exponent.exponential(num1, num2)
+    #result = exponent.exponential(num1, num2)
+    result = num1 ** num2
 else:
     result = "Error."
 
